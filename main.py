@@ -6,6 +6,7 @@ print("hi! welcome in to Zyack's Donuts!")
 print("please be specific when you tell me what you want.")
 print("i'm hard of hearing.")
 bread_color = input("do you want a cake or whole wheat donut?")
+print()
 
 wn = trtl.Screen()
 wn.tracer(False)
@@ -70,22 +71,29 @@ bread.ht()
 icing = trtl.Turtle()
 icing.speed(0)
 icing_color = input("do you want chocolate, vanilla, or pink icing?")
+print()
 if icing_color == "pink":
     icing.pencolor("#EE82EE")
     icing.fillcolor("#EE82EE")
     print("pink it is!")
+    print()
 elif icing_color == "chocolate":
     icing.pencolor("#4C2100")
     icing.fillcolor("#4C2100")
     print("chocolate it is!")
+    print()
 elif icing_color == "vanilla":
     icing.pencolor("#F7EDE6")
     icing.fillcolor("#F7EDE6")
     print("vanilla it it!")
+    print()
 else:
     print("that isn't an option. you're gonna get pink, buster.")
+    print()
     icing.pencolor("#EE82EE")
     icing.fillcolor("#EE82EE")
+print("icing.")
+print("icing..")
 print("icing...")
 icing.penup()
 icing.begin_fill()
@@ -105,7 +113,9 @@ for bump in range(50):
     if len(icing_bump_size) == 0:
         icing_bump_size = [12, 16, 18, 24, 30]
     if bump == 30:
-        print("icing's done.")
+        print("icing done.")
+        print()
+
 
 bread.penup()
 bread.goto(0, 125)
@@ -125,8 +135,10 @@ shadow.ht()
 sprinkle = trtl.Turtle()
 sprinkle.speed(0)
 sprinkle_yes = input("do you want sprinkles?")
+print()
 if sprinkle_yes == "yes":
     SPRINKLE_TYPE = input("chocolate or rainbow?")
+    print()
 elif sprinkle_yes == "no":
     sprinkle.ht()
     print("enjoy the donut and thanks for coming in!")
@@ -134,20 +146,28 @@ elif sprinkle_yes == "no":
     wn.mainloop()
 else:
     print("huh!? i can't hear ya! here have some sprinkles")
+    print()
     SPRINKLE_TYPE = "rainbow"
 if SPRINKLE_TYPE == "rainbow":
     sprinkle_color = ["red", "yellow", "#EE82EE",
                       "blue", "green", "purple", "white"]
     print("rainbow sprinkles it it!")
+    print()
 elif SPRINKLE_TYPE == "chocolate":
     sprinkle_color = ["#210E00"]
     print("chocolate sprinkles it is!")
+    print()
 else:
     print("huh!? i can't hear ya! here have some sprinkles")
+    print()
     sprinkle_color = ["red", "yellow", "#EE82EE",
                       "blue", "green", "purple", "white"]
 DIRECTION = 90
+print("sprinkling.")
+print("sprinkling..")
 print("sprinkling...")
+print("sprinkling done.")
+print()
 for color in range(60):
     new_color = sprinkle_color.pop()
     sprinkle.pencolor(new_color)
