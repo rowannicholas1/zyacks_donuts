@@ -1,13 +1,14 @@
 '''main.py'''
 import turtle as trtl
-wn = trtl.Screen()
-wn.tracer(False)
 
 # wn.setup(900, 1100, 0, 0)
 print("hi! welcome in to Zyack's Donuts!")
 print("please be specific when you tell me what you want.")
 print("i'm hard of hearing.")
 bread_color = input("do you want a cake or whole wheat donut?")
+
+wn = trtl.Screen()
+wn.tracer(False)
 
 shadow = trtl.Turtle()
 shadow.ht()
@@ -180,5 +181,7 @@ for color in range(60):
 sprinkle.ht()
 
 print("bon appetit!")
+print()
+print("you can exit the store by pressing the red x button btw")
 
 wn.mainloop()
