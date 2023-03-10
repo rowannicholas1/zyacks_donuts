@@ -1,11 +1,16 @@
 '''main.py'''
 import turtle as trtl
 wn = trtl.Screen()
+wn.tracer(False)
 
 # wn.setup(900, 1100, 0, 0)
-print("hi! welcome in to Zyack's Donuts! please be specific when you tell me what you want. i'm hard of hearing.")
+print("hi! welcome in to Zyack's Donuts!")
+print("please be specific when you tell me what you want.")
+print("i'm hard of hearing.")
+bread_color = input("do you want a cake or whole wheat donut?")
 
 shadow = trtl.Turtle()
+shadow.ht()
 shadow.speed(0)
 shadow.pencolor("#5F6565")
 shadow.fillcolor("#5F6565")
@@ -16,9 +21,9 @@ shadow.begin_fill()
 shadow.circle(350, 360, 4)
 shadow.end_fill()
 shadow.penup()
-shadow.ht()
 
 plate = trtl.Turtle()
+plate.ht()
 plate.speed(0)
 plate.pencolor("#c1cdcd")
 plate.fillcolor("#c1cdcd")
@@ -29,11 +34,10 @@ plate.begin_fill()
 plate.circle(350, 360, 4)
 plate.end_fill()
 plate.penup()
-plate.ht()
 
 bread = trtl.Turtle()
+bread.ht()
 bread.speed(0)
-bread_color = input("do you want a cake or whole wheat donut?")
 if bread_color == "cake":
     bread.pencolor("#F2AC45")
     bread.fillcolor("#F2AC45")
@@ -41,7 +45,10 @@ elif bread_color == "whole wheat":
     bread.pencolor("#9A702B")
     bread.fillcolor("#9A702B")
 else:
-    print("you think you can be smart with me? get lost chump. we sell cake or whole wheat. come back later after you've cooled down.")
+    print("you think you can be smart with me?")
+    print("get lost chump.")
+    print("we sell cake or whole wheat.")
+    print("come back later after you've cooled down.")
     exit()
 print("i like that one!")
 shadow.begin_fill()
@@ -86,7 +93,7 @@ icing.circle(162)
 icing.end_fill()
 icing.penup()
 icing_bump_size = [14, 16, 14, 18, 24, 30, 14, 14]
-for bump in range(30):
+for bump in range(50):
     icing.begin_fill()
     icing.goto(0, 180)
     icing.pendown()
@@ -174,5 +181,4 @@ sprinkle.ht()
 
 print("bon appetit!")
 
-wn = trtl.Screen()
 wn.mainloop()
